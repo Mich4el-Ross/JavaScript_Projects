@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Calculator</h1>
+
+    <form class="calculator" name="calc">
+        <input class="value" type="text" name="displayTxt" readonly="">
+        
+        <span class="numbers plus" onclick="document.calc.displayTxt.value +='+'">+</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='-'">-</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='*'">*</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='/'">/</span>
+
+        <span class="numbers" onclick="document.calc.displayTxt.value +='7'">7</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='8'">8</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='9'">9</span>
+        <span class="numbers equal" onclick="document.calc.displayTxt.value =eval(calc.displayTxt.value)">=</span>
+
+        <span class="numbers" onclick="document.calc.displayTxt.value +='4'">4</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='5'">5</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='6'">6</span>
+
+        <span class="numbers" onclick="document.calc.displayTxt.value +='1'">1</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='2'">2</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='3'">3</span>
+
+        <span class="numbers" onclick="document.calc.displayTxt.value +='0'">0</span>
+        <span class="numbers" onclick="document.calc.displayTxt.value +='.'">.</span>
+        <span class="numbers clear" onclick="document.calc.displayTxt.value =''">AC</span>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0, 0.4)),url("../02_Base_Project/florest.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.calculator{
+    margin-top: 25px;
+    position: relative;
+    display: grid;
+}
+
+.calculator .value{
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    grid-column: span 4;
+}
+
+.calculator span{
+    display: grid;
+    place-items: center;
+    color: #FFF;
+    width: 60px;
+    height: 60px;
+    background-color: #1A1818;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.calculator span:active{
+    background-color: #74FF3B;
+    color: #111;
+}
+
+.calculator span.equal{
+    grid-row: span 4;
+    height: 246px;
+    background-color: #131212;
+    color:#FFF;
+} 
