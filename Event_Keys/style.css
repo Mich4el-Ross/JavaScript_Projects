@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0, 0.4)),url("../02_Base_Project/florest.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container div#key{
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #999;
+    background-color: #eee;
+    color: #000;
+    font-weight: bold;
+}
+
+.container div{
+    width: 200px;
+    padding: 15px;
+    background-color: #eee;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 42px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    margin: 15px 50px;
+    position: relative;
+}
+
+.container div > small{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+}
