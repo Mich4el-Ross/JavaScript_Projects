@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0, 0.4)),url("../02_Base_Project/florest.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+h2{
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container{
+    background-color: #000000;
+    padding: 20px;
+    background-color: #010420;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+
+.container .results {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.container .results button {
+    outline: none; 
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #37378d;
+    border-radius: 5px;
+}
+
+.container .results button i {
+    color: white;
+    font-size: 20px;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.container .settings .setting{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.container .settings .setting input[type='checkbox']{
+    transform:scale(1.25);
+}
+
+.container button#generate {
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding: 8px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    font-weight: bold;
+    color: white;            
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.container button#generate:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
