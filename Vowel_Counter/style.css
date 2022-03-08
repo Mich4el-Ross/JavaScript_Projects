@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, 0.4)),url("../02_Base_Project/florest.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    font-weight: 600;  
+    font-size: 2.5rem; 
+    color: #FFF; 
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+textarea{
+    margin-top: 15px;
+    padding: 10px;
+    width: 75%;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 3px 8px 8px rgba(100, 100, 111, 1);
+    height: 80px;
+    line-height: 16px;
+    resize: none;
+    outline: none;
+}
+
+button{
+    padding: 10px 30px;
+    margin-top: 15px;
+    background-color: rgb(102, 51, 153);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(118, 47, 189);
+}
+
+textarea:focus{
+    outline: none;
+    box-shadow: rgba(0, 0, 255, 0.12) 0px 2px 4px 0px, rgba(0, 0 , 255, 0.32) 0px 2px 16px 0px;
+    border-color: rgb(118, 47, 189);
+}
